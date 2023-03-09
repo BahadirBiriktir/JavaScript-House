@@ -1,10 +1,3 @@
-/*
-Project: js-canvas
-Date:    06.09.2021
-https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineTo
-https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/arc
-https://www.w3schools.com/tags/ref_canvas.asp
-*/
 
 'use strict';
 const appName = 'canvas';
