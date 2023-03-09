@@ -1,0 +1,68 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+  {
+      "name": "chrome-launch-index.html",
+      "type": "pwa-chrome",
+      "runtimeArgs": [
+        "--allow-file-access ",
+        "--disable-extensions ",
+        "--allow-file-access-from-files",
+        "--allow-cross-origin-auth-prompt",
+        "--disable-features=TranslateUI"
+      ],
+      "request": "launch",
+      "file": "${workspaceFolder}/index.html"
+    },
+    {
+      "name": "firefox-nightly-launch-index.html",
+      "firefoxExecutable": "nightly",
+      "type": "firefox",
+      "reAttach": true,
+      "request": "launch",
+      "file": "${workspaceFolder}/index.html",
+      "preferences": {
+        "javascript.options.experimental.private_fields": true,
+        "javascript.options.experimental.private_methods": true,
+    },
+    },
+    {
+      "name": "chromium-launch-index.html",
+      "type": "pwa-chrome",
+      // change path to your chromium path
+      "runtimeExecutable": "C:/Program Files/Chromium/Application/chrome.exe",
+      "runtimeArgs": [
+        "--allow-file-access ",
+        "--disable-extensions ",
+        "--allow-file-access-from-files",
+        "--allow-cross-origin-auth-prompt",
+        "--disable-features=TranslateUI"
+      ],
+      "request": "launch",
+      "file": "${workspaceFolder}/index.html"
+    },
+    {
+      "name": "msedge-launch-index.html",
+      "type": "pwa-msedge",
+      "runtimeArgs": [
+        "--allow-file-access ",
+        "--disable-extensions ",
+        "--allow-file-access-from-files",
+        "--allow-cross-origin-auth-prompt",
+        "--disable-features=TranslateUI"
+      ],
+      "request": "launch",
+      "file": "${workspaceFolder}/index.html"
+    },
+    {
+      "name": "firefox-launch-index.html",
+      "type": "firefox",
+      "reAttach": true,
+      "request": "launch",
+      "file": "${workspaceFolder}/index.html"
+    }
+  ]
+}
